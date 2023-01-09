@@ -3,6 +3,7 @@
   "main": "app/index.js",
   "type": "module",
   "scripts": {
+    "db": "json-server --watch db.json",
     "test": "vitest"
   },
   "devDependencies": {
