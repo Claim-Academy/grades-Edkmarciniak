@@ -1,16 +1,7 @@
-export const add2Nums = (num1, num2) => num1 + num2;
-
 import apiService from "./api.service.js";
-import {
-  getAllStudentNames,
-  getStudentById,
-  getStudentGradeById,
-} from "./lib.js";
 
-const grades = apiService.getGrades() => {};
+const getAllStudentNames = (grades) => grades.map((grade) => grade);
 
-const gradesAndNames = getAllStudentNames(
-  getStudentById, getStudentGradeById(2, 3)
-);
+const getStudentById = (grades) => grades.map((grade) => grade);
 
-
+const getStudentGradeById = (grades) => grades.map((grade) => grade);
