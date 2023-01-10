@@ -1,8 +1,6 @@
-import got from "got";
-const BASE_URL = "http://localhost:3000/grades";
+function getGrades(name, grades) {
+  return name.filter((grades) => grades.grades === grades);
+}
 
-export default {
-  getgrades() {
-    return got(BASE_URL).json();
-  },
-};
+const grades = name.filter((grades) => grades.grades === grades);
+console.log(grades);
