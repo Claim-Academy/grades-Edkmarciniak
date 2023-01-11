@@ -1,7 +1,7 @@
 import apiService from "./api.service.js";
 
-const getAllStudentNames = (grades) => grades.map((grade) => grade);
+console.log(apiService);
 
-const getStudentById = (grades) => grades.map((grade) => grade);
+const gradesData = await apiService.getGradesData();
 
-const getStudentGradeById = (grades) => grades.map((grade) => grade);
+console.log(gradesData);
