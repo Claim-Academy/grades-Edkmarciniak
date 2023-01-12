@@ -7,6 +7,3 @@ it("should return all names from list", () => {
   const actual = getAllNamesFromList(input);
   expect(actual).toEqual(expected);
 });
-
-export const getStudentById = (list, id) =>
-  list.find((employee) => employee.id === id);
