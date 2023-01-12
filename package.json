@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "got": "^12.5.3",
-    "json-server": "^0.8.14"
+    "json-server": "^0.17.1"
   }
 }
