@@ -1,3 +1,1 @@
-export const getAllNamesFromList = (list) => {
-  return list.map((people) => people.name);
-};
+export const getAllNamesFromList = (list) => list.map((people) => people.name);
