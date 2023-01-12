@@ -6,3 +6,5 @@ const gradesInfo = await apiService.getGradesData();
 console.log(gradesInfo);
 
 console.log(getAllNamesFromList(gradesInfo));
+
+console.log(getStudentGradesByType(gradesInfo));

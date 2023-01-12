@@ -6,4 +6,7 @@ export default {
   getGradesData() {
     return got(BASE_URL).json();
   },
+  updateGrade(studentId, updatedStudent) {
+    return got.put(`${BASE_URL}/${studentId}`, { json: updatedStudent }).json();
+  },
 };

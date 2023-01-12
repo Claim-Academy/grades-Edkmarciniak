@@ -3,6 +3,8 @@ import {
   getAllNamesFromList,
   getStudentById,
   getStudentGradeById,
+  getStudentGradesByType,
+  addGrade,
 } from "./lib.js";
 
 it("should return all names from list", () => {
@@ -32,6 +34,17 @@ it("should return student grade by id", () => {
   const expected = { id: 2 };
 
   const actual = getStudentGradeById(listInput, idGradeInput);
+
+  expect(actual).toEqual(expected);
+});
+
+it("should return student grades by type", () => {
+  const listInput = [{ id: 1 }, { id: 2 }];
+  const idGradeInput = 2;
+
+  const expected = { id: 2 };
+
+  const actual = getStudentGradesByType(listInput, idGradeInput);
 
   expect(actual).toEqual(expected);
 });
