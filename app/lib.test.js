@@ -1,5 +1,9 @@
 import { expect, it } from "vitest";
-import { getAllNamesFromList, getStudentById } from "./lib.js";
+import {
+  getAllNamesFromList,
+  getStudentById,
+  getStudentGradeById,
+} from "./lib.js";
 
 it("should return all names from list", () => {
   const input = [{ name: "John" }, { name: "Jane" }];
@@ -17,6 +21,17 @@ it("should return student by id", () => {
   const expected = { id: 2 };
 
   const actual = getStudentById(listInput, idFindInput);
+
+  expect(actual).toEqual(expected);
+});
+
+it("should return student grade by id", () => {
+  const listInput = [{ id: 1 }, { id: 2 }];
+  const idGradeInput = 2;
+
+  const expected = { id: 2 };
+
+  const actual = getStudentGradeById(listInput, idGradeInput);
 
   expect(actual).toEqual(expected);
 });
