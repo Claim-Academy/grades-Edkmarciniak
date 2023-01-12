@@ -39,6 +39,8 @@ export const updateGrades = ({list, gradeType, updatedScore, studentId}) => {
 
  const updatedList
 
+};
+
  export const deleteGrade = ({list, gradeType, studentId}) => {
   const foundStudent = getStudentGradeById(list, studentId);
 
