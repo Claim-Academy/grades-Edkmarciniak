@@ -1,5 +1,5 @@
 import apiService from "./api.service.js";
 
-const gradesData = await apiService.getGrades();
+const gradesInfo = await apiService.getGrades();
 
-console.log(gradesData);
+console.log(gradesInfo);
