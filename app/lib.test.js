@@ -1,5 +1,5 @@
 import { it, expect } from "vitest";
-import { getAllNamesFromList } from "./lib";
+import { getAllNamesFromList } from "./lib.js";
 
 it("should return all names from list", () => {
   const list = [
