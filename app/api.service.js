@@ -3,7 +3,7 @@ import got from "got";
 const BASE_URL = "http://localhost:3001/grades";
 
 export default {
-  getGrades() {
+  getGradesData() {
     return got(BASE_URL).json();
   },
 };
