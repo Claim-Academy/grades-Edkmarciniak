@@ -1,10 +1,9 @@
-import { it, expect } from "vitest";
+import { expect, it } from "vitest";
 import { getAllNamesFromList } from "./lib.js";
 
 it("should return all names from list", () => {
-  const list = [
-    { name: "John", age: 20 },
-    { name: "Jane", age: 21 },
-  ];
-  expect(getAllNamesFromList(list)).toEqual(["John", "Jane"]);
-}
+  const input = [{ name: "John" }, { name: "Jane" }];
+  const expected = ["John", "Jane"];
+  const actual = getAllNamesFromList(input);
+  expect(actual).toEqual(expected);
+});
